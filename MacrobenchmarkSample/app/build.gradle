@@ -57,6 +57,16 @@ android {
     }
     // [END macrobenchmark_setup_app_build_type]
 
+    flavorDimensions "test"
+    productFlavors {
+        demo {
+            dimension "test"
+        }
+        full {
+            dimension "test"
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
